@@ -79,7 +79,7 @@ if st.button("Predict Energy Consumption"):
         input_data = np.array([features])
         
         # Get the prediction from the ML model
-        pipe = pkl.load(open("model/pred_building_energy_consumption.pkl", "rb"))
+        pipe = pkl.load(open("model\pred_building_energy_consumption.pkl", "rb"))
         prediction = pipe.predict(input_data)
 
         # Display the entered data
